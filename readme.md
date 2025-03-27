@@ -14,7 +14,7 @@ Applikasjonen er en enkel brukeradministrasjonssystem med:
 
 ```bash
 # Klon repositoriet
-git clone <repository-url>
+git clone https://github.com/rubbahtehlol/Flask_Fix.git
 cd Flask_Fix
 
 # Opprett et virtuelt miljø
