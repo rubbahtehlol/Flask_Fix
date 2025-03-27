@@ -55,10 +55,10 @@ For testing (når feilene er fikset) finnes det tre brukere:
 ## Filstruktur
 
 ```
-flask-feilsoking/
+Flask_Fix/
 ├── app.py                 # Hovedapplikasjonsfil (med feil)
 ├── Flask_JSON/
-│   └── data.json          # JSON-"database" (må opprettes)
+│   └── data.json          # JSON-"database"
 ├── templates/
 │   ├── admin.html         # Admin-panel
 │   ├── bruker.html        # Brukerside
@@ -83,7 +83,3 @@ flask-feilsoking/
 - Praksis med Git og branching-strategier
 - Debugging-teknikker
 - Håndtering av brukerdata og autentisering
-
-## Lisens
-
-Dette prosjektet er lisensiert under MIT-lisensen.
