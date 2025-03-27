@@ -1,0 +1,8 @@
+# Virtuelle miljøer
+venv/
+.venv/
+ENV/
+
+# OS-spesifikt
+.DS_Store
+Thumbs.db

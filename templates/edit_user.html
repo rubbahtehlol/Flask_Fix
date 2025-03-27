@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rediger bruker</title>
+    <link rel="stylesheet" href="/static/edit_user.css">
+</head>
+<body>
+    <h1>Rediger bruker: {{ user.username }}</h1>
+    
+    <div class="form-container">
+        <form action="/users/update" method="post">
+            <input type="hidden" name="old_username" value="{{ user.username }}">
+            
+            <div class="form-group">
+                <label for="username">Brukernavn:</label>
+                <input type="text" id="username" name="username" value="{{ user.username }}" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Passord:</label>
+                <input type="password" id="password" name="password" value="{{ user.password }}" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="role">Rolle:</label>
+                <select id="role" name="role">
+                    <option value="admin" {% if user.role == 'admin' %}selected{% endif %}>Admin</option>
+                    <option value="bruker" {% if user.role == 'bruker' %}selected{% endif %}>Bruker</option>
+                    <option value="guest" {% if user.role == 'guest' %}selected{% endif %}>Gjest</option>
+                </select>
+            </div>
+            
+            <div class="buttons">
+                <button type="submit">Lagre endringer</button>
+                <a href="/users"><button type="button" class="cancel-btn">Avbryt</button></a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
