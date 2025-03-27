@@ -43,7 +43,7 @@ Applikasjonen inneholder bevisst innlagte feil av forskjellige typer:
 - Feil i templates
 - Problemer med databehandling
 
-Din oppgave er å identifisere og fikse disse feilene. Se [Git-branching Guide](GIT-BRANCHING-GUIDE.md) for strukturert tilnærming til feilsøking med Git-brancher.
+Din oppgave er å identifisere og fikse disse feilene. Se [Git-branching Guide](git-branching-guide.md) for strukturert tilnærming til feilsøking med Git-brancher.
 
 ## Brukerinformasjon
 
